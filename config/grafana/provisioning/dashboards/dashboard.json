@@ -1,0 +1,23 @@
+{
+  "annotations": {
+    "list": []
+  },
+  "panels": [
+    {
+      "type": "graph",
+      "title": "Prediction Requests",
+      "targets": [
+        {
+          "expr": "prediction_requests",
+          "format": "time_series"
+        }
+      ],
+      "datasource": "Prometheus"
+    }
+  ],
+  "schemaVersion": 26,
+  "editable": true,
+  "version": 1,
+  "uid": "model_dashboard",
+  "title": "Model Metrics Dashboard"
+}
