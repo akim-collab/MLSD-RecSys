@@ -1,9 +1,9 @@
 FROM apache/airflow:2.10.3
 
-RUN pip install pyspark==3.5.0
-RUN pip install pandas
-RUN pip install minio
-RUN pip install pyarrow
+RUN pip install pyspark==3.5.0 \
+    && pip install pandas \
+    && pip install minio \
+    && pip install pyarrow
 
 USER root
 RUN apt-get update && apt-get install -y default-jdk && apt-get autoremove -yqq --purge && apt-get clean && rm -rf /var/lib/apt/lists/*
